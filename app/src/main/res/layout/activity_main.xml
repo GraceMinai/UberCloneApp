@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+        <TextView
+            android:id="@+id/register_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/firstName_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_id"
+            android:layout_marginStart="20dp"
+            android:hint="First name"
+            android:textStyle="italic">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/secondName_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstName_id"
+            android:layout_marginTop="20dp"
+            android:hint="Second name"
+            android:textStyle="italic"
+            android:layout_marginStart="20dp">
+
+        </EditText>
+        <EditText
+            android:id="@+id/userName_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User name"
+            android:layout_below="@id/secondName_id"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/emailAddress_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:layout_below="@id/userName_id"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:inputType="textEmailAddress">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/phoneNumber_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:layout_below="@id/emailAddress_id"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:inputType="phone">
+
+        </EditText>
+
+
+     <Button
+         android:id="@+id/submit_id"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/phoneNumber_id"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+         android:text="SUBMIT">
+
+     </Button>
+
+
+
+
+</RelativeLayout>
+
