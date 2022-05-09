@@ -7,18 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".Map">
 
+
+    <LinearLayout
+        android:id="@+id/linearToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/purple_200"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1.5"
+            android:text="Select Your Destination"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/myspinner"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+        </Spinner>
+
+    </LinearLayout>
+
+
     <fragment
         android:id="@+id/map_id"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.google.android.gms.maps.SupportMapFragment">
+        android:layout_below="@id/linearToolbar">
 
     </fragment>
 
 
+    <Button
+        android:id="@+id/btn_requestRide"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textAllCaps="true"
+        android:text="Request Ride"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="15dp">
 
-
-
+    </Button>
 
 
 
